@@ -20,24 +20,36 @@ img.Banner{
 }
 /*************************  Final Header ************************/
 
+/*************************  BreadCrumb **************************/
+
+
 
 /************************* Inicio Nav **************************/
 
 nav{
     background:black;
     font-size: 1.5rem;
+    width: 100%;
+}
+
+.menu{
+    align-items: center;
+    list-style-type: none;
+    text-decoration: none;
+    
+}
+li{
+    background: black;
+    text-align: center;
+    border: solid 1px white;
+    color: none;
+    color:white
 }
 
 a{
-    
     text-decoration: none;
-    color:white;
-    right: right;
-    position:left;
-    margin-left:30px;
-    
+    color: white;
 }
-
 
 /************************* Final Nav  *************************/
 
@@ -45,8 +57,7 @@ a{
 /************************* Inicio Main ***********************/
 
 main{
-    background: blue;
-    height: 200px;
+    background:white;
 }
 
 /************************* Final Main *************************/
@@ -56,15 +67,14 @@ main{
 footer{
     display: flex;
     flex-direction: row;
-    background: #c8cddb;
+    background: black;
     height: 200px;
     width: 100%;
     position:static;
     bottom:0%;
 }
 
-p.contato{
-    background: black;
+h1.contato{
     color:white;
     font-size:40px;
     height: 40px; 
@@ -72,45 +82,8 @@ p.contato{
     margin-top: 70px;
 }
 
-div.icones{
-    display: flex;
-    flex-direction: row;
-    background: black;
-    height: 100%;
-    width: 400px;
-}
 
-figure.github{
-    background: white;
-    height: 80px;
-    width:80px;
-    border-radius: 100%;
-    margin-top: 60px;
-    margin-left: 40px;
-}
 
-figure.linkedin{
-    background: white;
-    height: 80px;
-    width:80px;
-    border-radius:100%;
-    margin-top:60px;
-    margin-left: 20px;
-}
-
-div.developer{
-    margin-top: 30px;
-}
-
-p.apresentacao{
-    text-align: center;
-    margin-left: 200px;
-}
-
-picture.picture-programador{
-
-    margin-left:350px;
-}
 
 
 /************************* Final Footer *********************/

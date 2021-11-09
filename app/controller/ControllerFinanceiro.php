@@ -1,11 +1,18 @@
 <?php
 namespace App\Controller;
 
-class ControllerFinanceiro{
+use Src\Classes\ClassRender;
+use Src\Interfaces\InterfaceView;
 
-    public function valorConta($Conta){
+class ControllerFinanceiro extends ClassRender implements InterfaceView{
 
-        
+    public function __construct(){
+
+        $this->setTitle("Financeiro");
+        $this->setDescription("Gerenciador Documentos Financeiros");
+        $this->setKeywords("Financeiro, Pagas, Não Pagas, Valores");
+        $this->setDir("financeiro");
+        $this->renderLayout();
+
     }
-
 }

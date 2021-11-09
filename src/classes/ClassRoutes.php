@@ -24,7 +24,11 @@ class ClassRoutes{
             "home"=>"ControllerHome",
             "sitemap"=>"ControllerSiteMap",
             "erro"=>"Controller404",
-            "financeiro"=>"ControllerFinanceiro"
+            "financeiro"=>"ControllerFinanceiro",
+            "contabilidade"=>"ControllerContabilidade",
+            "administrativo"=>"ControllerAdministrativo",
+            "estoque"=>"ControllerEstoque",
+            "cadastro"=>"ControllerCadastro"
         );
 
 

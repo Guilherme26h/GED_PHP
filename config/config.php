@@ -44,7 +44,7 @@ define('DIRVIDEO' ,DIRPAGE."public/video/");
 #ACESSO AO BANCO DE DADOS
 
 define('HOST', "localhost");
-define('DB', "sistema");
+define('DB', "ged");
 define('USER', "root");
 define('PASS', "");
 

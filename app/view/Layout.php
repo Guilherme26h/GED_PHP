@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,17 +17,31 @@
         <figure class="header-fixed">
             <img class="Banner" src="<?php echo DIRIMG.'Banner.png'?>" alt="Banner GED">
         </figure>
-        <?php echo $this->addHeader(); ?> 
+        <?php echo $this->addHeader(); ?>
+        
     </header>
 
     <!--------------------------- NAV -------------------------->
     <nav>
-        <a href="<?php echo DIRPAGE; ?>">Home</a>
-        <a href="<?php echo DIRPAGE; ?>">Financeiro</a>
-        <a href="<?php echo DIRPAGE; ?>">Contabilidade</a>
-        <a href="<?php echo DIRPAGE; ?>">Estoque</a>
-        <a href="<?php echo DIRPAGE; ?>">Administrativo</a>
+        <!-- Links -->
+        <ul class="menu">
+            <li>Menu</li>
+            <ul>
+                <li><a href="<?php echo DIRPAGE; ?>">Home</a></li>
+                <li><a href="<?php echo DIRPAGE.'financeiro'; ?>">Financeiro</a></li>
+                <li><a href="<?php echo DIRPAGE.'contabilidade'; ?>">Contabilidade</a></li>
+                <li><a href="<?php echo DIRPAGE.'estoque'; ?>">Estoque</a></li>
+                <li><a href="<?php echo DIRPAGE.'administrativo'; ?>">Administrativo</a></li>
+            </ul>
+        </ul>
     </nav>
+    <div>
+        <?php
+            $bread = new \Src\Classes\classBreadCrumb();
+            $bread->addBreadcrumb();
+        ?>
+    </div>
+     
 
 
 
@@ -38,25 +52,15 @@
 
     <!------------------------- Footer ------------------------>
     <footer>
-    
-       <div class= "icones">
-        <p class="contato">Contatos:</p>
-           
-            <figure class="github">
-
-            </figure>
-
-            <figure class="linkedin">
-
-            </figure>
-       </div>
-       <div class="developer">
-           <picture class="picture-programador">
-                <img src="<?php echo DIRIMG.'img_programador_site.png' ?>" alt="imagem do programador do site">
-            </picture>
-           <p class= "apresentacao">GED desenvovido por Guilherme Henrique de Sousa Jesus <br> Analista e Desenvolvedor de Sistemas</p>
-                    
-       </div>
+        <h1 class="contato">Contato:</h1>
+        <div class='container-footer'>
+            <div class="github">
+                <figure></figure>
+            </div>
+            <div class="linkedin">
+                <figure></figure>
+            </div>
+        </div>
         <?php echo $this->addFooter(); ?>
     </footer>
     
