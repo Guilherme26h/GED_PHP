@@ -17,6 +17,11 @@ public function renderLayout(){
 
 }
 
+public function renderLogin(){
+    include_once(DIRREQ."app/view/login/Main.php");
+}
+
+
 public function addHead(){
     if(file_exists(DIRREQ."app/view/{$this->getDir()}/Head.php")){
         include (DIRREQ."app/view/{$this->getDir()}/Head.php");

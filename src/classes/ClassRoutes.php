@@ -28,7 +28,6 @@ class ClassRoutes{
             "contabilidade"=>"ControllerContabilidade",
             "administrativo"=>"ControllerAdministrativo",
             "estoque"=>"ControllerEstoque",
-            "cadastro"=>"ControllerCadastro"
         );
 
 

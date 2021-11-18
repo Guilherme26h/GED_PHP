@@ -2,17 +2,33 @@
 namespace App\Controller;
 
 use Src\Classes\ClassRender;
-use Src\Interfaces\InterfaceView;
+use App\Model\ClassEstoque;
 
-class ControllerEstoque extends ClassRender implements InterfaceView{
+class ControllerEstoque extends ClassEstoque{
 
     public function __construct(){
 
-        $this->setTitle("Estoque");
-        $this->setDescription("Gerenciador documentos estoque");
-        $this->setKeywords("Produtos, Marca, Tipo, Valor, Quantidade");
-        $this->setDir("estoque");
-        $this->renderLayout();
+        $Render = new ClassRender();
+        $Render->setTitle("Estoque");
+        $Render->setDescription("Gerenciador documentos estoque");
+        $Render->setKeywords("Produtos, Marca, Tipo, Valor, Quantidade");
+        $Render->setDir("estoque");
+        $Render->renderLayout();
 
+    }
+
+    public function uploadBalanco(){
+
+        $this->Balanco();
+    }
+
+    public function uploadNotaEntrada(){
+        
+        $this->NotaEntrada();
+    }
+
+    public function uploadNotaSaida(){
+
+        $this->NotaSaida();
     }
 }

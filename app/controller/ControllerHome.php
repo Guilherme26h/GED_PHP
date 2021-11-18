@@ -8,11 +8,14 @@ class ControllerHome extends ClassRender implements InterfaceView{
 
     public function __construct(){
 
-        $this->setTitle("Gerenciador de Documentos Eletronicos");
-        $this->setDescription("Modelo de Gerenciador de Documentos Eletrônicos");
-        $this->setKeywords("Financeiro, Contabilidade, Estoque, RH");
-        $this->setDir("home");
-        $this->renderLayout();
+        
+            $this->setTitle("Gerenciador de Documentos Eletronicos");
+            $this->setDescription("Modelo de Gerenciador de Documentos Eletrônicos");
+            $this->setKeywords("Financeiro, Contabilidade, Estoque, RH");
+            $this->setDir("home");
+            $this->renderLayout();
+        
 
     }
+
 }

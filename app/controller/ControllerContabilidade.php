@@ -2,17 +2,37 @@
 namespace App\Controller;
 
 use Src\Classes\ClassRender;
-use Src\Interfaces\InterfaceView;
+use App\Model\ClassContabilidade;
 
-class ControllerContabilidade extends ClassRender implements InterfaceView{
+class ControllerContabilidade extends ClassContabilidade{
 
     public function __construct(){
 
-        $this->setTitle("Contabilidade");
-        $this->setDescription("Gerenciador documentos Contabilidade");
-        $this->setKeywords("Contador, administração, dinheiro");
-        $this->setDir("contabilidade");
-        $this->renderLayout();
+        $Render = new ClassRender();
+        $Render->setTitle("Contabilidade");
+        $Render->setDescription("Gerenciador documentos Contabilidade");
+        $Render->setKeywords("Contador, administração, dinheiro");
+        $Render->setDir("contabilidade");
+        $Render->renderLayout();
+
+    }
+
+
+    public function uploadDemonstrativo(){
+
+        $this->Demonstrativo();
+
+    }
+
+    public function uploadMovimentosContabeis(){
+
+        $this->MovimentosContabeis();
+
+    }
+
+    public function uploadFiscal(){
+
+        $this->Fiscal();
 
     }
 }

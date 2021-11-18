@@ -31,9 +31,6 @@ class Dispatch extends ClassRoutes{
         $this->Param = $Param;
     }
 
-
-
-
     public function __construct()
     {
         #Direciona para o Controller

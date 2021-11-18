@@ -7,40 +7,59 @@
     <meta name="description" content="<?php echo $this->getDescription();?>">
     <meta name="keywords" content="<?php echo $this->getKeywords(); ?>">
     <title><?php echo $this->getTitle(); ?></title>
-    <link rel="stylesheet" href="<?php echo DIRCSS.'Style.css' ?>">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo DIRCSS.'Layout.css' ?>">
+    <script src="<?php echo DIRJS.'menu.js'?>" defer></script>
     <?php echo $this->addHead();?>
+
+    
 </head>
 <body>
-    
+
     <!---------------------------Header------------------------>
     <header>
-        <figure class="header-fixed">
-            <img class="Banner" src="<?php echo DIRIMG.'Banner.png'?>" alt="Banner GED">
-        </figure>
+        <!------------------------ Banner --------------------->
+        <div class="banner">
+            <img src="<?php echo DIRIMG.'Banner-fullscreen.png'?>" alt="">
+        </div>
+        <!------------------------ NAV ------------------------>
+        <nav>
+            <div class="logo">
+                <h1>Menu</h1>
+                <span function="click"  id="menu-icone" class="material-icons">menu</span>
+            </div>
+            <div class="menu">
+                    <ul>
+                    <li>
+                        <a href="<?php echo DIRPAGE;?>">Home</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo DIRPAGE.'contabilidade'; ?>">Contabilidade</a>
+                     </li>
+                    <li>
+                        <a href="<?php echo DIRPAGE.'financeiro'; ?>">Financeiro</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo DIRPAGE.'estoque'; ?>">Estoque</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo DIRPAGE.'administrativo'; ?>">Administrativo</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <?php echo $this->addHeader(); ?>
         
     </header>
 
-    <!--------------------------- NAV -------------------------->
-    <nav>
-        <!-- Links -->
-        <ul class="menu">
-            <li>Menu</li>
-            <ul>
-                <li><a href="<?php echo DIRPAGE; ?>">Home</a></li>
-                <li><a href="<?php echo DIRPAGE.'financeiro'; ?>">Financeiro</a></li>
-                <li><a href="<?php echo DIRPAGE.'contabilidade'; ?>">Contabilidade</a></li>
-                <li><a href="<?php echo DIRPAGE.'estoque'; ?>">Estoque</a></li>
-                <li><a href="<?php echo DIRPAGE.'administrativo'; ?>">Administrativo</a></li>
-            </ul>
-        </ul>
-    </nav>
-    <div>
+    
+    <div class="breadcrumb">
         <?php
             $bread = new \Src\Classes\classBreadCrumb();
             $bread->addBreadcrumb();
         ?>
     </div>
+    <hr>
      
 
 
@@ -52,15 +71,7 @@
 
     <!------------------------- Footer ------------------------>
     <footer>
-        <h1 class="contato">Contato:</h1>
-        <div class='container-footer'>
-            <div class="github">
-                <figure></figure>
-            </div>
-            <div class="linkedin">
-                <figure></figure>
-            </div>
-        </div>
+        <div class="direitos-autorais"> Criado e Desenvolvido por: &copy; Guilherme Henrique de Sousa Jeus</div>
         <?php echo $this->addFooter(); ?>
     </footer>
     

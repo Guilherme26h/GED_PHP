@@ -15,7 +15,46 @@ if(substr($_SERVER['DOCUMENT_ROOT'], -1) == "/"){
     define('DIRREQ' ,"{$_SERVER['DOCUMENT_ROOT']}/{$PastaInterna}");
 }
 
-#Diretórios especificos
+
+
+#Diretório de upload Financeiro
+
+define('UPLOADDOCGERAL' ,DIRREQ."public/upload/financeiro/documentos gerais/");
+
+define('UPLOADCONTASPAGAR' ,DIRREQ."public/upload/financeiro/contas a pagar/");
+
+define('UPLOADCONTASPAGAS' ,DIRREQ."public/upload/financeiro/contas pagas/");
+
+define('UPLOADBOLETOS' ,DIRREQ."public/upload/financeiro/boletos/");
+
+#Diretório de upload Contabilidde
+
+define('UPLOADCONTABEIS' ,DIRREQ."public/upload/contabilidade/documentos contabeis/");
+
+define('UPLOADMOVCONTABEIS' ,DIRREQ."public/upload/contabilidade/movimento contabeis/");
+
+define('UPLOADDEMONSTRATIVO' ,DIRREQ."public/upload/contabilidade/demonstrativo/");
+
+define('UPLOADFISCAL' ,DIRREQ."public/upload/contabilidade/fiscal/");
+
+#Diretório de upload Administrativo
+
+
+define('UPLOADNFE' ,DIRREQ."public/upload/administrativo/NFE/");
+
+define('UPLOADDANFE' ,DIRREQ."public/upload/administrativo/DANFE/");
+
+define('UPLOADPLANILHASADM' ,DIRREQ."public/upload/administrativo/Planilhas/");
+
+#Diretório de upload Estoque
+
+define('UPLOADBALANCO',DIRREQ."public/upload/estoque/Balanço/");
+
+define('UPLOADNOTAENTRADA',DIRREQ."public/upload/estoque/Nota Entrada/");
+
+define('UPLOADNOTASAIDA',DIRREQ."public/upload/estoque/Nota Saida/");
+
+
 
 #Diretório de Administração
 define('DIRADM' ,DIRPAGE."public/admin/");
@@ -40,6 +79,11 @@ define('DIRJS' ,DIRPAGE."public/js/");
 
 #Definição diretório de video
 define('DIRVIDEO' ,DIRPAGE."public/video/");
+
+#Diretório de icones
+define('DIRICON' ,DIRPAGE."public/icon/");
+
+
 
 #ACESSO AO BANCO DE DADOS
 
