@@ -1,4 +1,4 @@
-var menu = document.getElementsByClassName('mobille');
+var menu = document.getElementsById('menu');
 var menuIcone = document.getElementById('menu-icone')
 
 menuIcone.addEventListener("click", function(){
@@ -10,4 +10,3 @@ menuIcone.addEventListener("click", function(){
     }
 
 })
-

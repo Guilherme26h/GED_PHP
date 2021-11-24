@@ -28,7 +28,7 @@
                 <h1>Menu</h1>
                 <span function="click"  id="menu-icone" class="material-icons">menu</span>
             </div>
-            <div class="menu">
+            <div class="menu" id="menu-mobille">
                     <ul>
                     <li>
                         <a href="<?php echo DIRPAGE;?>">Home</a>

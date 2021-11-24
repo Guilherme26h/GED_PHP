@@ -105,21 +105,17 @@ footer{
     }
 
     .menu{
-        display:none;
-    }
-
-    .mobille{
         width: 100%;
-        display: none;
+        display: block;
     }
 
-    .mobille ul{
+    .menu ul{
         text-align: center;
         
     }
 
-    .mobille li{
-        display:none;
+    .menu li{
+        display:block;
         border:2px solid white;
         margin:0;
         font-size: 1.5rem;
