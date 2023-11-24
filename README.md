@@ -8,7 +8,10 @@
 
 ## Tecnologias Utilizadas
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![PHP](https://img.shields.io/badge/Apache-FF0000?style=for-the-badge&logo=apache&logoColor=white)
+![APACHE](https://img.shields.io/badge/Apache-FFFFFF?style=for-the-badge&logo=apache&logoColor=red)
+![HTML](https://img.shields.io/badge/Html-e69138?style=for-the-badge&logo=html&logoColor=white)
+![PHP](https://img.shields.io/badge/Css-3d85c6?style=for-the-badge&logo=css&logoColor=white)
+
 
 
 ## Como Inicializar o Projeto
